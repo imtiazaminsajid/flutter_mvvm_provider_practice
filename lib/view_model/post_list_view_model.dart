@@ -10,7 +10,8 @@ class PostListViewModel with ChangeNotifier {
   Future<void> fetchMediaData() async {
     try {
       postList = await ApiRepository().fetchPostList();
-      notifyListeners();
+      // notifyListeners(); this call will occur to notifiy ui twice,
+      // since the bottom one will be called anyway 
     } catch (e) {
       log(e.toString());
     }
