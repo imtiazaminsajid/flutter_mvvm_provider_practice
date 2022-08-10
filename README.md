@@ -1,16 +1,40 @@
-# mvvm_provider_practice
+# MVVM Provider Practice
 
 A new Flutter project.
 
-## Getting Started
+## File Pattern Inside The `lib` Folder
 
-This project is a starting point for a Flutter application.
+```
+    lib/
+    ├── model/
+    │   └── post.dart
+    ├── repository/
+    │   └── api_repository.dart
+    ├── services/
+    │   ├── api_service.dart
+    │   ├── app_exception.dart
+    │   └── base_service.dart
+    ├── utils/
+    │   ├── api_constants.dart
+    │   └── size_config.dart
+    ├── view/
+    │   ├── widgets/
+    │   │   └── post_item.dart
+    │   ├── post_details_screen.dart
+    │   └── post_list_screen.dart
+    ├── view_model/
+    │   ├── post_details_view_model.dart
+    │   └── post_list_view_model.dart
+    └── main.dart
+```
 
-A few resources to get you started if this is your first Flutter project:
+## App Demo
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<table align="center" style="margin: 0px auto;">
+  <tr>
+    <th>On an iPhone 8 Simulator</th>
+  </tr>
+  <tr>
+    <td align="center"><img align="right" src="screenshots/gif/app_demo.gif"></img></td>
+  </tr>
+</table>
