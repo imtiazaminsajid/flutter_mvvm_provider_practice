@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_provider_practice/view_model/post_list_view_model.dart';
-import 'widgets/post_item.dart';
 import 'package:provider/provider.dart';
 
+import '../view_model/post_list_view_model.dart';
+import 'widgets/post_item.dart';
+
 class PostListScreen extends StatefulWidget {
+  const PostListScreen({Key? key}) : super(key: key);
+
   @override
-  _PostListScreenState createState() => _PostListScreenState();
+  State createState() => _PostListScreenState();
 }
 
 class _PostListScreenState extends State<PostListScreen> {

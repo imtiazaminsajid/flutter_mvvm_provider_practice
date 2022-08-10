@@ -1,11 +1,7 @@
-import 'dart:convert';
-import 'dart:developer';
-
-import 'package:mvvm_provider_practice/model/post.dart';
-
-import '../utils/api_constants.dart';
-import '../services/base_service.dart';
+import '../model/post.dart';
 import '../services/api_service.dart';
+import '../services/base_service.dart';
+import '../utils/api_constants.dart';
 
 class ApiRepository {
   final BaseService _apiService = ApiService();

@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 class ApiConstants {
   static const String API_BASE_URL = "https://gorest.co.in/public/v2";
 
