@@ -1,7 +1,9 @@
 import 'dart:io';
+
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
+
 import 'app_exception.dart';
 import 'base_service.dart';
 
@@ -70,7 +72,7 @@ class ApiService extends BaseService {
         throw BadRequestException(response.data.toString());
       case 401:
       case 403:
-        throw UnauthorisedException(response.data.toString());
+        throw UnauthorizedException(response.data.toString());
       case 500:
       default:
         throw FetchDataException(

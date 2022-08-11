@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_provider_practice/model/post.dart';
-import '../view_model/post_details_view_model.dart';
 import 'package:provider/provider.dart';
+
+import '../model/post.dart';
+import '../view_model/post_details_view_model.dart';
 
 class PostDetailsScreen extends StatefulWidget {
   final Post? aPost;
@@ -9,7 +10,7 @@ class PostDetailsScreen extends StatefulWidget {
       : super(key: key);
 
   @override
-  _PostDetailsScreenState createState() => _PostDetailsScreenState();
+  State createState() => _PostDetailsScreenState();
 }
 
 class _PostDetailsScreenState extends State<PostDetailsScreen> {

@@ -1,12 +1,12 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mvvm_provider_practice/view/post_details_screen.dart';
+
 import '../../model/post.dart';
+import '../post_details_screen.dart';
 
 class PostItem extends StatelessWidget {
-  Post aPost;
+  final Post aPost;
 
-  PostItem({Key? key, required this.aPost}) : super(key: key);
+  const PostItem({Key? key, required this.aPost}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

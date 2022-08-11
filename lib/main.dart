@@ -1,10 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mvvm_provider_practice/view_model/post_list_view_model.dart';
 import 'package:provider/provider.dart';
+
 import 'view/post_list_screen.dart';
 import 'view_model/post_details_view_model.dart';
+import 'view_model/post_list_view_model.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
         ),
         initialRoute: '/',
         routes: {
-          '/': (context) => PostListScreen(),
+          '/': (context) => const PostListScreen(),
         },
       ),
     );
